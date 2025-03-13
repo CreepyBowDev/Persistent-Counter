@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(270deg, #ff0000, #00ff00, #0000ff);
+    background-size: 600% 600%;
+    animation: animateBackground 6s infinite linear;
+}
+
+@keyframes animateBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.container {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    width: 400px;
+    height: 250px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background: #222;
+    width: 300px;
+    height: 75px;
+    border: 2px solid #444;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: inset 2px 2px 5px rgba(255, 255, 255, 0.2),
+        inset -2px -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+button {
+    width: 110px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.incremento {
+    background: rgb(40, 180, 40);
+    color: white;
+}
+
+.incremento:hover {
+    background: rgb(50, 220, 50);
+    transform: scale(1.05);
+}
+
+.decrecimiento {
+    background: rgb(200, 50, 50);
+    color: white;
+}
+
+.decrecimiento:hover {
+    background: rgb(245, 65, 65);
+    transform: scale(1.05);
+}
+
+.reset {
+    background: rgb(100, 100, 100);
+    color: white;
+}
+
+.reset:hover {
+    background: rgba(150, 150, 150, 0.8);
+    transform: scale(1.05);
+}
