@@ -19,4 +19,4 @@ A simple counter that remembers its value even after refreshing the page, thanks
 ## 📦 Installation
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/CreepyBowDev/persistent-counter.git
+   git clone https://github.com/CreepyBowDev/Persistent-Counter.git
